@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Andhra Pradesh | Tourism Guide</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="topbar">
+        <div class="site-title">
+            <h1>Discover Andhra Pradesh</h1>
+            <p>Your Complete Tourism Guide</p>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#districts">Districts</a>
+                <div class="submenu">
+                    <div class="submenu-content">
+                        <h3>Explore Districts</h3>
+                        <div class="submenu-grid">
+                            <a href="#anantapur" class="submenu-item">Anantapur</a>
+                            <a href="#chittoor" class="submenu-item">Chittoor</a>
+                            <a href="#eastgodavari" class="submenu-item">East Godavari</a>
+                            <a href="#guntur" class="submenu-item">Guntur</a>
+                            <a href="#krishna" class="submenu-item">Krishna</a>
+                            <a href="#kurnool" class="submenu-item">Kurnool</a>
+                            <a href="#prakasam" class="submenu-item">Prakasam</a>
+                            <a href="#nellore" class="submenu-item">Nellore</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#historical">Historical</a>
+                <div class="submenu">
+                    <div class="submenu-content">
+                        <h3>Historical Sites</h3>
+                        <div class="submenu-grid">
+                            <a href="#lepakshi" class="submenu-item">Lepakshi Temple</a>
+                            <a href="#undavalli" class="submenu-item">Undavalli Caves</a>
+                            <a href="#gandikota" class="submenu-item">Gandikota</a>
+                            <a href="#amaravati" class="submenu-item">Amaravati Stupa</a>
+                            <a href="#kondapalli" class="submenu-item">Kondapalli Fort</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#religious">Religious</a>
+                <div class="submenu">
+                    <div class="submenu-content">
+                        <h3>Religious Sites</h3>
+                        <div class="submenu-grid">
+                            <a href="#tirumala" class="submenu-item">Tirumala Temple</a>
+                            <a href="#simhachalam" class="submenu-item">Simhachalam Temple</a>
+                            <a href="#srisailam" class="submenu-item">Srisailam Temple</a>
+                            <a href="#ahobilam" class="submenu-item">Ahobilam</a>
+                            <a href="#srikalahasti" class="submenu-item">Sri Kalahasti Temple</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#natural">Natural</a>
+                <div class="submenu">
+                    <div class="submenu-content">
+                        <h3>Natural Attractions</h3>
+                        <div class="submenu-grid">
+                            <a href="#araku" class="submenu-item">Araku Valley</a>
+                            <a href="#borra" class="submenu-item">Borra Caves</a>
+                            <a href="#pulicat" class="submenu-item">Pulicat Lake</a>
+                            <a href="#belum" class="submenu-item">Belum Caves</a>
+                            <a href="#horsley" class="submenu-item">Horsley Hills</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#cultural">Cultural</a>
+                <div class="submenu">
+                    <div class="submenu-content">
+                        <h3>Cultural Heritage</h3>
+                        <div class="submenu-grid">
+                            <a href="#etikoppaka" class="submenu-item">Etikoppaka</a>
+                            <a href="#crafts" class="submenu-item">Traditional Crafts</a>
+                            <a href="#festivals" class="submenu-item">Local Festivals</a>
+                            <a href="#cuisine" class="submenu-item">Regional Cuisine</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <div class="search-filter-container">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="🔍 Search locations..." 
+                class="search-input"
+            >
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="district">Districts</button>
+                <button class="filter-btn" data-filter="historical">Historical</button>
+                <button class="filter-btn" data-filter="religious">Religious</button>
+                <button class="filter-btn" data-filter="natural">Natural</button>
+                <button class="filter-btn" data-filter="cultural">Cultural</button>
+            </div>
+        </div>
+
+        <div id="locationGrid" class="location-grid"></div>
+    </div>
+
+    <div id="locationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>🗺️ Explore</h3>
+                <ul>
+                    <li><a href="#districts">🏛️ Districts</a></li>
+                    <li><a href="#historical">🏰 Historical Sites</a></li>
+                    <li><a href="#religious">🕉️ Religious Places</a></li>
+                    <li><a href="#natural">🌿 Natural Attractions</a></li>
+                    <li><a href="#cultural">🎭 Cultural Heritage</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>ℹ️ Information</h3>
+                <ul>
+                    <li><a href="#about">👥 About Us</a></li>
+                    <li><a href="#contact">📞 Contact</a></li>
+                    <li><a href="#faq">❓ FAQ</a></li>
+                    <li><a href="#terms">📜 Terms of Use</a></li>
+                    <li><a href="#privacy">🔒 Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>🏨 Tourism Services</h3>
+                <ul>
+                    <li><a href="#hotels">🏨 Hotels</a></li>
+                    <li><a href="#transport">🚌 Transportation</a></li>
+                    <li><a href="#guides">👥 Tour Guides</a></li>
+                    <li><a href="#packages">📦 Tour Packages</a></li>
+                    <li><a href="#booking">📅 Book Now</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>🤝 Connect With Us</h3>
+                <ul>
+                    <li><a href="#facebook">📱 Facebook</a></li>
+                    <li><a href="#instagram">📸 Instagram</a></li>
+                    <li><a href="#twitter">🐦 Twitter</a></li>
+                    <li><a href="#youtube">📺 YouTube</a></li>
+                    <li><a href="#blog">✍️ Travel Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>📍 More ways to explore: <a href="#locations">Find a Location</a> or <a href="#guide">contact a tour guide</a> near you. Or call 📞 1800-123-4567.</p>
+            <div class="footer-legal">
+                <p>© 2025 Andhra Pradesh Tourism. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Use</a>
+                    <a href="#sales">Sales Policy</a>
+                    <a href="#legal">Legal</a>
+                    <a href="#sitemap">Site Map</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="locations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
